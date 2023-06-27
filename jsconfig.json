@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "lib": ["ESNext"],
+        "target": "ESNext",
+        "moduleResolution": "nodenext",
+        "resolveJsonModule": true,
+        "rootDir": "./src",
+    },
+}

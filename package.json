@@ -1,0 +1,23 @@
+{
+  "name": "status-bot",
+  "version": "1.0.0",
+  "description": "Discord kullanıcıların durumlarını algılayıp istediğiniz rolü veridirtebilirsiniz.",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "discord",
+    "client",
+    "app"
+  ],
+  "author": "romanwashere, romanhizm",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.11.0"
+  }
+}
