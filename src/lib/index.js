@@ -34,24 +34,24 @@ module.exports = {
                 const text = first?.type === ActivityType.Custom ? first?.state : first?.name;
 
                 if (hasRole && text !== name) {
-                    member.roles.remove(role, 'discord.gg/altyapilar - Raven\'s')
+                    member.roles.remove(role, 'discord.gg/azgin\'s')
                     .then(() => {
                         channel.send({
                             embeds: [
                                 new EmbedBuilder()
                                 .setColor(Colors.DarkButNotBlack)
-                                .setTitle('Bir kişi aramızdan ayrıldı 😥')
+                                .setTitle('url düştü :Haram:1')
                                 .setAuthor({ name: member.user.username, iconURL: member.user.displayAvatarURL() })    
-                                .setDescription(`• Gerekli roller, ${member.displayName}'ın/in durum mesajını **${name}** yapması nedeniyle kendisinden alındı.`)
+                                .setDescription(`• @${member.displayName}' url düştüğü için rolü alındı.`)
                                 .setThumbnail(member.user.displayAvatarURL())
                                 .setFields([
                                     {
-                                        name: 'Kullanıcı etiketi:',
+                                        name: 'Kullanıcı:',
                                         value: `> ${member.user.username}`,
                                         inline: true,
                                     },
                                     {
-                                        name: 'Güncelleme saati:',
+                                        name: 'değiştirme süresi:',
                                         value: `> ${time(parseInt(`${Date.now() / 1000}`), 'R')}`,
                                         inline: true,
                                     },
@@ -62,7 +62,7 @@ module.exports = {
                                     },
                                 ])
                                 .setTimestamp()
-                                .setFooter({ text: 'Bu proje discord.gg/altyapilar sunucusundan alınmıştır.', iconURL: 'https://cdn.discordapp.com/icons/1096085223881576549/a_8830154a6bf88323c07d34907cc4caa3.gif' }),
+                                .setFooter({ text: 'discord.gg/azgin.', iconURL: 'https://share.creavite.co/65d2297835c1ff0fa7e8314d.gif' }),
                             ],
                           });
                         })
@@ -74,24 +74,24 @@ module.exports = {
                 if (hasRole) continue;
                 if (text !== name) continue;
 
-                member.roles.add(role, 'discord.gg/altyapilar - Raven\'s')
+                member.roles.add(role, 'discord.gg/azgin \'s')
                     .then(() => {
                         channel.send({
                             embeds: [
                                 new EmbedBuilder()
                                 .setColor(Colors.DarkButNotBlack)
-                                .setTitle('Bir kişi daha aramıza katıldı 🎉')
+                                .setTitle('url aldı :dudak: ')
                                 .setAuthor({ name: member.user.username, iconURL: member.user.displayAvatarURL() })    
-                                .setDescription(`• Gerekli roller, ${member.displayName}'ın/in durum mesajını **${name}** yapması nedeniyle kendisine verildi.`)
+                                .setDescription(`• @${member.displayName} url aldığı için rolü teslim edildi.`)
                                 .setThumbnail(member.user.displayAvatarURL())
                                 .setFields([
                                     {
-                                        name: 'Kullanıcı etiketi:',
-                                        value: `> ${member.user.username}`,
+                                        name: 'Kullanıcı:',
+                                        value: `>  @${member.user.username}`,
                                         inline: true,
                                     },
                                     {
-                                        name: 'Güncelleme saati:',
+                                        name: 'değiştirme süresi:',
                                         value: `> ${time(parseInt(`${Date.now() / 1000}`), 'R')}`,
                                         inline: true,
                                     },
@@ -102,7 +102,7 @@ module.exports = {
                                     },
                                 ])
                                 .setTimestamp()
-                                .setFooter({ text: 'Bu proje discord.gg/altyapilar sunucusundan alınmıştır.', iconURL: 'https://cdn.discordapp.com/icons/1096085223881576549/a_8830154a6bf88323c07d34907cc4caa3.gif' }),
+                                .setFooter({ text: 'discord.gg/azgin.', iconURL: 'https://share.creavite.co/65d2297835c1ff0fa7e8314d.gif' }),
                             ],
                         })
                         .catch(() => undefined);
